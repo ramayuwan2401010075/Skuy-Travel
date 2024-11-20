@@ -1,0 +1,89 @@
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 15px 20px;
+  }
+  
+  .nama a{
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .nav-links{
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .nav-links li{
+    margin: 0 10px;
+  }
+  .nav-links a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+  .nav-links a:hover{
+    color: #f0a500;
+  }
+
+  /* Searh Bar */
+
+  .search-bar {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-bar input {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 0px;
+    outline: none;
+  }
+  
+  .search-bar button {
+    background-color: #f0a500;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .search-bar button:hover {
+    background-color: #e59500;
+  }
+  .logo-img {
+    height: 50px; 
+    width: auto; 
+    display: block; 
+    padding: 0;
+  }
+ 
+.logo {
+  display: flex; 
+  align-items: center;
+  gap: 10px; 
+  text-decoration: none; 
+}
+
+.company-name {
+  color: white; 
+  font-size: 20px; 
+  font-weight: bold; 
+  text-transform: uppercase; 
+  letter-spacing: 1px; 
+}
