@@ -11,23 +11,37 @@
 <body>
   <nav class="navbar">
     <div class="logo">
-      <a href="#">
         <img src="img/freepik--20241120081947eBur.png" alt="Logo" class="logo-img">
-        <span class="SkuyTravel">SkuyTravel</span>
-      </a>
     </div>
-    
-    
+    <div class="skuytravel">
+      <h1>SkuyTravel</h1>
+    </div>
+        
     <ul class="nav-links">
       <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#services">Services</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="#destination">Destination</a></li>
     </ul>
-    <form class="search" action="#" method="get">
-      <input type="text" placeholder="Search..." name="q">
+    <form class="search-container" action="#" method="get">
+      <input type="text" class="search-bar" placeholder="Search..." name="q">
       <button type="submit"><i class="fas fa-search"></i></button>
     </form>
   </nav>
+
+  <div class="slideshow-container">
+    <div class="slide fade">
+        <img src="img/image1.jpg" alt="Foto 1">
+    </div>
+    <div class="slide fade">
+        <img src="img/image2.jpg" alt="Foto 2">
+    </div>
+    <div class="slide fade">
+        <img src="img/image3.jpg" alt="Foto 3">
+    </div>
+    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+    <a class="next" onclick="changeSlide(1)">&#10095;</a>
+</div>
+<script src="main.js"></script>
 </body>
 </html>

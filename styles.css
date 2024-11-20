@@ -7,16 +7,10 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
-    padding: 15px 20px;
+    background-color: #ffffff;
+    padding: 1px 20px;
   }
   
-  .nama a{
-    color: white;
-    text-decoration: none;
-    font-size: 24px;
-    font-weight: bold;
-  }
   .nav-links{
     list-style: none;
     margin: 0 auto;
@@ -28,46 +22,47 @@ body{
     margin: 0 10px;
   }
   .nav-links a{
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     font-size: 18px;
     transition: color 0.3s ease;
   }
   .nav-links a:hover{
-    color: #f0a500;
+    color: #2495ff;
   }
 
   /* Searh Bar */
 
-  .search-bar {
+  .search-container {
     display: flex;
     align-items: center;
+  
   }
   
-  .search-bar input {
+  .search-bar input{
     padding: 5px 10px;
-    border: none;
-    border-radius: 0px;
-    outline: none;
+    border: #2495ff;
+    border-radius: 10px;
+    outline: #000000;
   }
   
-  .search-bar button {
-    background-color: #f0a500;
+  .search-container button {
+    background-color: #2495ff;
     border: none;
     padding: 5px 10px;
     margin-left: 5px;
     border-radius: 3px;
     cursor: pointer;
-    color: white;
+    color: #000000;
     font-size: 16px;
-    transition: background-color 0.3s ease;
+    transition: 0.3s ease;
   }
   
-  .search-bar button:hover {
-    background-color: #e59500;
+  .search-container button:hover {
+    background-color: #2495ff;
   }
   .logo-img {
-    height: 50px; 
+    height: 90px; 
     width: auto; 
     display: block; 
     padding: 0;
@@ -80,10 +75,66 @@ body{
   text-decoration: none; 
 }
 
-.company-name {
-  color: white; 
+.skuytravel {
+  color: rgb(0, 0, 0); 
   font-size: 20px; 
   font-weight: bold; 
-  text-transform: uppercase; 
   letter-spacing: 1px; 
+}
+
+/* SLIDE SHOW */
+.slideshow-container {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+  height: 500px;
+}
+
+.slide {
+  display: none;
+  position: absolute;
+  animation: slideIn 0.5s ease-in-out
+}
+
+.slide img {
+ width: 100%;
+ 
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 50%;
+  z-index: 10;
+  user-select: none;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+.slide.active {
+  opacity: 1; /* Slide yang aktif terlihat */
+  z-index: 1;
+}
+@keyframes slideIn {
+  from {
+      transform: translateX(100%);
+  }
+  to {
+      transform: translateX(0);
+  }
 }
