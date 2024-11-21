@@ -86,7 +86,7 @@ body{
 .slide {
   display: none;
   position: absolute;
-  animation: slideIn 0,5s ease-in-out;
+  animation: 0.5 ease-in-out;
 }
 
 
@@ -96,14 +96,14 @@ body{
 }
 .slide-text {
   position: absolute;
-  bottom: 1px; /* Geser ke bawah dari gambar */
-  left: 50%;
+  top: 70%;
+  left: 9%;
   transform: translateX(-50%);
-  color: white; /* Warna teks */
+  color: #ffffff; /* Warna teks */
   font-size: 24px;
   font-weight: bold;
-  text-align: center;
-  background: rgba(0, 0, 0, 0.5); /* Latar belakang transparan */
+  text-align: left;
+  background: #000000c5; /* Latar belakang transparan */
   padding: 10px 20px;
   border-radius: 5px; /* Sudut melengkung */
   z-index: 10; /* Pastikan berada di atas gambar */
@@ -146,6 +146,10 @@ body{
   }
 }
 .popular{
-  align-self: center;
-  color: blue;
+  text-align: center;
+  background-color: #2495ff;
+  margin: 0 510px;
+  padding: 0px;
+  border-radius: 7px;
+  color: rgb(255, 255, 255);
 }
