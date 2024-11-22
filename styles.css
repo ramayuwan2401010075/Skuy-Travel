@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   
   .navbar{
@@ -96,16 +96,15 @@ body{
 }
 .slide-text {
   position: absolute;
-  top: 70%;
+  top: 5%;
   left: 9%;
   transform: translateX(-50%);
   color: #ffffff; /* Warna teks */
   font-size: 24px;
   font-weight: bold;
-  text-align: left;
-  background: #000000c5; /* Latar belakang transparan */
-  padding: 10px 20px;
-  border-radius: 5px; /* Sudut melengkung */
+  align-items: center;
+  padding: 0;
+  border-radius: 0px; /* Sudut melengkung */
   z-index: 10; /* Pastikan berada di atas gambar */
 }
 
@@ -148,8 +147,23 @@ body{
 .popular{
   text-align: center;
   background-color: #2495ff;
-  margin: 0 510px;
+  margin: 0px 510px;
   padding: 0px;
   border-radius: 7px;
   color: rgb(255, 255, 255);
+}
+.nav-body{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ccc;
+  padding: 1px 20px;
+}
+.about{
+  margin: 0px;
+  padding:0 60px 0 0;
+}
+.logo-about{
+  height: 250px;
+  width: auto;
 }
