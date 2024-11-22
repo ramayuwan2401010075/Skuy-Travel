@@ -86,7 +86,7 @@ body{
 .slide {
   display: none;
   position: absolute;
-  animation: 0.5 ease-in-out;
+  transition: slideIn 0.5s ease;
 }
 
 
@@ -156,7 +156,7 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #ccc;
+  background-color: rgb(241, 237, 231);
   padding: 1px 20px;
 }
 .about{
@@ -167,3 +167,49 @@ body{
   height: 250px;
   width: auto;
 }
+.accommodations{
+  text-align: center;
+  background-color: #2495ff;
+  margin: 0px 450px;
+  padding: 0px;
+  border-radius: 7px;
+  color: rgb(255, 255, 255);
+}
+/* Container untuk gallery */
+.image-gallery {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 20px;
+}
+
+/* Gaya untuk setiap item gambar */
+.item {
+  text-align: center;
+  width: 250px;               
+  height: 300px;              
+  display: flex;
+  flex-direction: column;
+  justify-content: center;    
+  align-items: center;        
+  border-radius: 10px;
+  overflow: hidden;           
+}
+
+/* Gaya untuk gambar */
+.item img {
+  width: 100%;                
+  height: 100%;               
+  object-fit: cover;          
+  border-radius: 10px;        
+}
+
+/* Gaya untuk tulisan di bawah gambar */
+.caption {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000000;
+  margin-top: 10px;
+}
+
