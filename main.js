@@ -22,4 +22,4 @@ function changeSlide(n) {
 }
 
 
-document.addEventListener("DOMContentLoaded", showSlides);
+document.addEventListener("DOMContentLoaded", showSlides(slideIndex));
